@@ -1,6 +1,6 @@
 /* Main Javascript file */
 
-/* 
+/**
 Filename = app.js
 @author Dinesh Palle
 @date : 3rd June 2016
@@ -29,6 +29,8 @@ Website : http://comp125assignment1.azurewebsites.net/index.html
     var paragraph = [];
 
 
+
+
     // Create reference to the fields
     var firstName = document.getElementById("firstName");
     var lastName = document.getElementById("lastName");
@@ -39,8 +41,12 @@ Website : http://comp125assignment1.azurewebsites.net/index.html
     // Create a reference to the form
     var contactForm = document.getElementById("contactForm");
 
-    // Event listner with inline anonymous event handler function
-    contactForm.addEventListener("submit", function (event) {
+    // If statement - If contactForm exists then it runs the code inside.
+    if (contactForm)
+    {
+
+        // Event listner with inline anonymous event handler function
+        contactForm.addEventListener("submit", function (event) {
         event.preventDefault();
         console.log("=============================================================");
         console.log("Comp 125 Assignment 2 - Mini Portfolio – Contact Page Update");
@@ -48,8 +54,12 @@ Website : http://comp125assignment1.azurewebsites.net/index.html
         formInputOnConsole();
         console.log("=============================================================");
         contactForm.reset();
-    })
+        })
 
+    }
+
+
+    // formInputOnConsole function 
     function formInputOnConsole() {
 
         console.log("First Name :- " + firstName.value);
