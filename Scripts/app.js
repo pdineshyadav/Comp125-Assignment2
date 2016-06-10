@@ -3,9 +3,9 @@
 /**
 Filename = app.js
 @author Dinesh Palle
-@date : 3rd June 2016
+@date : 10th June 2016
 StudentID : 300705307
-Website : http://comp125assignment1.azurewebsites.net/index.html
+Website : http://comp125assignment2update.azurewebsites.net/index.html
 @description : This is the main javascript file of this website
 */
 
@@ -31,11 +31,15 @@ Website : http://comp125assignment1.azurewebsites.net/index.html
 
 
 
-    // Create reference to the fields
+    // Create reference to the firstName field
     var firstName = document.getElementById("firstName");
+    // Create reference to the lastName field
     var lastName = document.getElementById("lastName");
+    // Create reference to the phoneNumber field
     var phoneNumber = document.getElementById("phoneNumber");
+    // Create reference to the email field
     var email = document.getElementById("email");
+    // Create reference to the message field
     var message = document.getElementById("message");
 
     // Create a reference to the form
