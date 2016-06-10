@@ -29,8 +29,6 @@ Website : http://comp125assignment2update.azurewebsites.net/index.html
     var paragraph = [];
 
 
-
-
     // Create reference to the firstName field
     var firstName = document.getElementById("firstName");
     // Create reference to the lastName field
