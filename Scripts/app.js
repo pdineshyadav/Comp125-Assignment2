@@ -36,7 +36,28 @@ Website : http://comp125assignment1.azurewebsites.net/index.html
     var email = document.getElementById("email");
     var message = document.getElementById("message");
 
+    // Create a reference to the form
+    var contactForm = document.getElementById("contactForm");
 
+    // Event listner with inline anonymous event handler function
+    contactForm.addEventListener("submit", function (event) {
+        event.preventDefault();
+        console.log("=============================================================");
+        console.log("Comp 125 Assignment 2 - Mini Portfolio – Contact Page Update");
+        console.log("=============================================================");
+        formInputOnConsole();
+        console.log("=============================================================");
+        contactForm.reset();
+    })
+
+    function formInputOnConsole() {
+
+        console.log("First Name :- " + firstName.value);
+        console.log("Last Name :- " + lastName.value);
+        console.log("Phone Number :- " + phoneNumber.value);
+        console.log("Email ID :- " + email.value);
+        console.log("Detailed Description :- " + message.value);
+    }
 
 
 
